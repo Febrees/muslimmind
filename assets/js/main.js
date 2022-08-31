@@ -32,6 +32,42 @@ search.addEventListener('click', ()=>{
 
     }
 })
+// filtr
+const tButton = document.querySelectorAll('.types--button')
+const allTypes = document.querySelectorAll('.filtr--type__all')
+tButton.forEach((button, key) =>{
+    button.addEventListener('click', function(){
+        if(allTypes[key].style.height == '150px'){
+            allTypes[key].style.height = '0'
+        }else{           
+            allTypes.forEach((type, key)=>{
+                allTypes[key].style.height = '0'
+
+            })
+            allTypes[key].style.height = '150px'
+        }
+    })
+    
+})
+allTypes.forEach((type, key)=>{
+    const types = type.querySelectorAll('.type')
+    const Checking = type.querySelectorAll('.type span')
+    Checking.forEach((check, key) =>{
+        check.addEventListener('click', function(){
+            if(types[key].classList.contains('checked')){
+                types[key].classList.remove('checked')
+            }else{
+                types.forEach((type, key)=>{
+                    types[key].classList.remove('checked')
+
+                })
+                types[key].classList.add('checked')
+
+            }
+        })
+    })
+})
+
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
