@@ -850,7 +850,13 @@ input {
 .article img{
   width: 80%;
 }
-
+.article .button{
+  display: flex;
+  align-items: center;
+}
+.article .button i{
+  font-size: 1.5rem;
+}
 /*=============== FOOTER ===============*/
 
 
