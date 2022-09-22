@@ -850,6 +850,11 @@ input {
 .article img{
   width: 80%;
 }
+.read_and_down{
+  display: flex;
+  column-gap: 1rem;
+
+}
 .article .button{
   display: flex;
   align-items: center;
