@@ -676,6 +676,9 @@ input {
   justify-content: center;
   padding: 2.75rem 0;
 }
+.place__button{
+  z-index: 5;
+}
 
 /* filtr */
 /* filt */
