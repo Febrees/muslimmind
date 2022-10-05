@@ -272,13 +272,11 @@ input {
 }
 .navbar--form{
   margin-top: 20px;
-  width: 70%;
+  width: 25%;
 }
 .inputBox{
   position: relative;
-  width: 150px;
-  height: 0;
-  overflow: hidden;
+  width: 100%;
   transition: 0.3s;
 }
 
@@ -1002,14 +1000,8 @@ input {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    gap: 0;
   }
-  .navbar--form{
-    width: 40%;
-    position: absolute;
-    left: 3rem;
-    bottom: 24rem;
-  }
+  
   .search i{
     color: var(--white-color);
   }
@@ -1019,11 +1011,8 @@ input {
   .search{
     margin-top: 0rem;
   }
-  .navbar--form{
-    position: absolute;
-    left: 15rem;
-    bottom: -4.5rem;
-  }
+  
+
   .products.navbar--form{
     left: -3rem;
   }

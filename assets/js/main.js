@@ -18,20 +18,6 @@ if(navClose){
         navMenu.classList.remove('show-menu')
     })
 }
-// search
-const search = document.querySelector('.ri-search-line')
-const inputBox = document.querySelector('.inputBox')
-search.addEventListener('click', ()=>{
-    if(inputBox.style.height == 'unset'){
-        inputBox.style.height = '0'
-        inputBox.style.overflow = 'hidden'
-    }else{
-        inputBox.style.height = 'unset'
-        inputBox.style.overflow = 'unset'
-        
-
-    }
-})
 // filtr
 const tButton = document.querySelectorAll('.types--button')
 const allTypes = document.querySelectorAll('.filtr--type__all')
