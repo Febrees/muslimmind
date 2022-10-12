@@ -176,3 +176,24 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+// download
+const downloads = document.getElementById('download')
+let url = "https://jsonplaceholder.typicode.com/posts"
+console.log(downloads);
+if(downloads != null){
+	downloads.addEventListener('click', () => {
+		console.log('1');
+		download(url, '1.txt')
+	})
+}
+function download(url, filename) {
+	fetch(url).then(function(t) {
+		return t.blob().then((b)=>{
+			var a = document.createElement("a");
+			a.href = URL.createObjectURL(b);
+			a.setAttribute("download", filename);
+			a.click();
+		}
+		);
+	});
+	}
