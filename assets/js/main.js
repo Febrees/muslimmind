@@ -182,7 +182,6 @@ let url = "https://jsonplaceholder.typicode.com/posts"
 console.log(downloads);
 if(downloads != null){
 	downloads.addEventListener('click', () => {
-		console.log('1');
 		download(url, '1.txt')
 	})
 }
