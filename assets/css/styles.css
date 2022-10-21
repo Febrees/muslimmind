@@ -845,16 +845,15 @@ input {
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
-
   align-items: center;
   gap: 1rem;
 }
 .article img{
-  width: 40%;
+  width: 90%;
   object-fit: cover;
 }
 .article--content{
-  width: 50%;
+  width: 90%;
 }
 .read_and_down{
   display: flex;
@@ -1002,6 +1001,12 @@ input {
     flex-direction: row;
   }
   
+  .article img{
+	  width: 40%;
+  }
+  .article--content{
+	  width: 40%;
+  }
   .search i{
     color: var(--white-color);
   }
